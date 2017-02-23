@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OpenCVGrayscale"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="340" Width="1600" Loaded="Window_Loaded">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Stretch="Uniform" Name="original"/>
+        <Image Grid.Column="1" Stretch="Uniform" Name="grayscale1"/>
+        <Image Grid.Column="2" Stretch="Uniform" Name="grayscale2"/>
+        <Image Grid.Column="3" Stretch="Uniform" Name="grayscale3"/>
     </Grid>
 </Window>
